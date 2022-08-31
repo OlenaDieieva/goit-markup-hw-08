@@ -1,0 +1,21 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 0px;
+    background: var(--primary-background-color);
+}
+
+footer.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.locate {
+    margin-right: 70px;
+}
