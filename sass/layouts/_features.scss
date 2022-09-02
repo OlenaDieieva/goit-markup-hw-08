@@ -16,8 +16,6 @@
 
 .features-list {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     gap: 30px;
 }
 
@@ -52,10 +50,6 @@
     text-align: start;
     margin-top: 0px;
     color: var(--title-text-color);
-}
-
-.features-list__item:not(:last-child) {
-    margin-right: 30px;
 }
 
 .item:not(:last-child) {
