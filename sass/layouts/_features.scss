@@ -1,20 +1,17 @@
-.section {
+.features {
     padding-top: 94px;
     padding-bottom: 94px;
-}
-
-.features__section {
     margin-bottom: 0px;
     background-color: var(--white);
 }
 
-.features__section .container {
+.features .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.features-list {
+.features-list__list {
     display: flex;
     gap: 30px;
 }
