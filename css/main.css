@@ -32,11 +32,26 @@
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .btn-group__button {
@@ -45,6 +60,11 @@
   color: var(--primary-text-color);
   background-color: var(--secondary-background-color);
   padding: 6px 22px;
+}
+@media screen and (min-width: 480px) {
+  .btn-group__button {
+    margin-bottom: 40px;
+  }
 }
 
 .btn-group__button.primary {
@@ -554,9 +574,9 @@
   font-family: "Raleway", sans-serif;
   text-decoration: none;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  margin-right: 93px;
+  font-size: 24px;
+  line-height: 1.17;
+  margin-right: 276px;
 }
 
 .logo__accent {
@@ -615,6 +635,7 @@ img {
   display: block;
   width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 a {
@@ -656,8 +677,18 @@ a {
 }
 
 .galery-list__item {
-  width: 370px;
+  width: 100%;
   border-radius: 4px;
+}
+@media screen and (min-width: 480px) {
+  .galery-list__item {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .galery-list__item {
+    width: 100%;
+  }
 }
 
 .galery-list__item:nth-child(3) {

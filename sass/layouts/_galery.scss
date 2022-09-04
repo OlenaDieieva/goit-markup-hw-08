@@ -33,8 +33,16 @@
 }
 
 .galery-list__item {
-    width: 370px;
+    width: 100%;
     border-radius: 4px;
+
+    @media screen and (min-width: 480px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: calc((100%-30px)/2);
+    }
 }
 
 .galery-list__item:nth-child(3) {
