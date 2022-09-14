@@ -1249,6 +1249,11 @@ header.container {
   border: none;
   background-color: transparent;
 }
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
 
 .menu-button .icon-cross {
   display: none;
@@ -1262,13 +1267,54 @@ header.container {
   display: none;
 }
 
-.js-menu-container {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
+.menu-container {
+  background-color: white;
+  padding-top: 40px;
+  text-align: center;
+  font-size: 40px;
 }
-.js-menu-container.is-open {
+.menu-container.is-open {
   display: block;
+}
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: flex;
+  }
+}
+
+.nav,
+.cont {
+  height: 796px;
+  width: 480px;
+}
+@media screen and (max-width: 480px) {
+  .nav,
+.cont {
+    display: flex;
+  }
+}
+
+.nav {
+  outline: 1px, solid, #757575;
+}
+
+.cont {
+  outline: 1px, solid, #757575;
+}
+@media screen and (min-width: 768px) {
+  .cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=main.css.map */
