@@ -25,6 +25,7 @@
 }
 
 .product__name {
+    flex-grow: 1;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
@@ -58,7 +59,9 @@
 }
 
 .galery-list {
-    display: flex;
+    // display: flex;
+    flex-direction: column;
+    height: 100%;
     flex-wrap: wrap;
     gap: 30px;
 }
