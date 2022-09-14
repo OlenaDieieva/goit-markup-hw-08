@@ -32,14 +32,24 @@
 }
 
 .container {
-  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
-@media screen and (max-width: 480px) {
-  .container .container {
-    width: 480px;
+@media screen and (min-width: 480px) {
+  .container {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 738px;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .container {
+    width: 1170px;
   }
 }
 
@@ -231,6 +241,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
 }
 
 .modal {
@@ -246,6 +257,16 @@
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--timing-function), opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 450px;
+    width: 100%;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -748,6 +769,7 @@ footer.container {
 }
 
 .header {
+  position: relative;
   border-bottom: 1px solid #ECECEC;
 }
 
@@ -807,7 +829,7 @@ header.container {
 }
 
 .hero {
-  max-width: 1600px;
+  width: 100%;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -819,6 +841,21 @@ header.container {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 738px;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .hero {
+    width: 1170px;
+  }
 }
 
 .hero__title {
@@ -985,6 +1022,11 @@ header.container {
 
 .work {
   padding-top: 0px;
+}
+@media screen and (max-width: 768px) {
+  .work {
+    display: none;
+  }
 }
 
 .work__list {
@@ -1198,4 +1240,35 @@ header.container {
 
 .join {
   margin-right: 93px;
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button .icon-menu {
+  display: none;
+}
+
+.js-menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+.js-menu-container.is-open {
+  display: block;
 }/*# sourceMappingURL=main.css.map */
