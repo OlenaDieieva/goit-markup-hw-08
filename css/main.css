@@ -36,10 +36,12 @@
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 480px;
 }
 @media screen and (min-width: 480px) {
   .container {
     width: 450px;
+    max-width: auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1251,11 +1253,21 @@ header.container {
   margin-right: 93px;
 }
 
+.logo-box {
+  display: flex;
+  text-align: center;
+  justify-content: space;
+}
+
 .menu-open-button {
   margin-left: auto;
+  width: 40px;
+  height: 40px;
 }
 
 .menu-container {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -1282,11 +1294,11 @@ header.container {
   margin-left: auto;
   margin-bottom: 5px;
   background-color: transparent;
-  fill: #212121;
+  fill: var(--primary-text-color);
   border: none;
 }
 .menu-close-button:hover, .menu-close-button:focus {
-  fill: #2196F3;
+  fill: var(--accent-color);
 }
 
 .mob-menu-list {
@@ -1300,21 +1312,13 @@ header.container {
   font-size: 40px;
   line-height: 47px;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
 .current-mob,
 .mob-menu__link:hover,
 .mob-menu__link:focus {
-  color: #2196F3;
-}
-
-.mob-menu-contact__email {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--accent-color);
 }
 
 .mobile-box {
@@ -1324,13 +1328,30 @@ header.container {
   margin-top: auto;
 }
 
+.mob-menu-contact__item {
+  margin-bottom: 32px;
+}
+
 .mob-menu-contact__tel {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 24px;
   line-height: 40px;
   letter-spacing: 0.02em;
-  color: #2196F3;
+  color: var(--accent-color);
   margin-bottom: 64px;
+}
+@media screen and (min-width: 480px) {
+  .mob-menu-contact__tel {
+    font-size: 34px;
+  }
+}
+
+.mob-menu-contact__email {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
 }
 
 .mob-menu-social {
@@ -1338,5 +1359,23 @@ header.container {
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
-  color: #2196F3;
+  color: var(--accent-color);
+}
+
+.mob-menu-social__list {
+  display: flex;
+  gap: 20px;
+}
+
+.mob-menu-social__item:not(:last-child)::after {
+  content: "";
+  height: 22px;
+  width: 1px;
+  position: absolute;
+  background-color: rgba(33, 33, 33, 0.2);
+  right: -10px;
+}
+
+.mob-menu-social__item {
+  position: relative;
 }/*# sourceMappingURL=main.css.map */
