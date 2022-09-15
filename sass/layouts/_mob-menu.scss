@@ -2,47 +2,88 @@
     margin-left: auto;
 }
 
-.mob-menu {
+// .mob-menu {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100vw;
+//     height: 100vh;
+//     z-index: 1;
+//     text-align: center;
+//     background-color: white;
+//     padding-top: 48px;
+//     padding-bottom: 48px;
+
+//     .container {
+//         height: 100%;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//     }
+// }
+
+// .mob-menu-navigation {}
+
+.menu-container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 1;
-    text-align: center;
+    padding: 48px 40px;
     background-color: white;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
 
-    .container {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
 }
 
-// .mob-menu-navigation {}
+.menu-container.is-open {
+    transform: translateX(0);
+}
 
 .menu-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
     display: block;
     margin-left: auto;
     margin-bottom: 5px;
+    background-color: transparent;
+    fill: #212121;
+    border: none;
+
+    &:hover,
+    &:focus {
+        fill: #2196F3
+    }
 }
 
 .mob-menu-list {
-    margin-bottom: 302px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
-.mob-menu-list:not(:last-child) {
-    margin-bottom: 32px;
+.mob-menu__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: #212121;
 }
 
-// .current {}
+.current-mob,
+.mob-menu__link:hover,
+.mob-menu__link:focus {
+    color: #2196F3;
+}
 
 // .mob-menu-contact-list {}
 
-.mob-menu-contact-list__email {
+.mob-menu-contact__email {
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
@@ -51,7 +92,14 @@
     color: #757575;
 }
 
-.mob-menu-contact-list__tel {
+.mobile-box {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    margin-top: auto;
+}
+
+.mob-menu-contact__tel {
     font-weight: 500;
     font-size: 34px;
     line-height: 40px;
