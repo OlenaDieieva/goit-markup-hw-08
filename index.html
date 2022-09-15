@@ -19,54 +19,67 @@
     <!--Шапка сайта -->
     <header class="header">
         <div class="container header-container">
-            <nav class="navigation">
-                <a lang="en" href="./index.html" class="logo">
-                    <span class="logo__accent">Web</span>Studio
-                </a>
-                <div class="menu-container js-menu-container" id="mobile-menu" data-menu">
-                    <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="mobile-menu"
-                        data-menu-button>
-                        <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
-                            <use class="icon-cross" href="./images3/symbol-defs4.svg#icon-close_24px">
-                            </use>
-                            <use class="icon-menu" href="./images3/symbol-defs4.svg#icon-menu_24px">
-                            </use>
+            <a lang="en" href="./index.html" class="logo">
+                <span class="logo__accent">Web</span>Studio
+            </a>
+            <button type="button" class="menu-open-button js-open-menu" aria-expanded="false"
+                aria-controls="mobile-menu">
+                <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu" href="./images3/symbol-defs4.svg#icon-menu_24px"></use>
+                </svg>
+                <div class="mob-menu container" js-menu-container>
+            </button>
+            <div class="mob-menu js-menu-container" id="mobile-menu">
+                <nav class=" mob-menu-navigation">
+                    <button type="button" class="menu-close-button js-close-menu" aria-expanded="false"
+                        aria-controls="mobile-menu"><svg width="40px" height="40px"
+                            aria-label="Переключатель мобильного меню">
+                            <use class="icon-cross" href="./images3/symbol-defs4.svg#icon-close_24px"></use>
                         </svg>
                     </button>
 
-                    <div class="nav"></div>
-                    <div class="cont"></div>
-                </div>
-
-
-
-                <ul class="navigation-list">
-                    <li><a href="./index.html" class="navigation-list__link current">Студия</a></li>
-                    <li><a href="./portfolio.html" class="navigation-list__link">Портфолио</a></li>
-                    <li><a href="./portfolio.html" class="navigation-list__link">Контакты</a></li>
+                    <ul class="mob-menu-list">
+                        <li><a href="./index.html" class="mob-menu-list__link current">Студия</a></li>
+                        <li><a href="./portfolio.html" class="mob-menu-list__link">Портфолио</a></li>
+                        <li><a href="./portfolio.html" class="mob-menu-list__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="mob-menu-contact-list">
+                    <li class="mob-menu-contact-list__item">
+                        <a lang="en" href="mailto:info@devstudio.com" class="mob-menu-contact-list__email">
+                            <svg class="mob-menu-contact-list__icon-envelope">
+                            </svg>info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="mob-menu-contact-list__item">
+                        <a href="tel:+380961111111" class="mob-menu-contact-list__tel">
+                            <svg class="mob-menu-contact-list__icon-tel">
+                            </svg>+38 096 111 11 11
+                        </a>
+                    </li>
                 </ul>
-            </nav>
-            <ul class="contact-list">
-                <li class="contact-list__item">
-                    <a lang="en" href="mailto:info@devstudio.com" class="contact-list__email">
-                        <svg class="contact-list__icon-envelope" width="16px" height="12px">
-                            <use href="./images2/symbol-defs.svg#icon-envelope-hover">
-                            </use>
-                        </svg>info@devstudio.com
-                    </a>
-                </li>
-                <li class="contact-list__item">
-                    <a href="tel:+380961111111" class="contact-list__tel">
-                        <svg class="contact-list__icon-tel" width="10px" height="16px">
-                            <use href="./images2/symbol-defs.svg#icon-tel"></use>
-                        </svg>+38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+                <ul class="mob-menu-social">
+                    <li class="mob-menu-social__item">Instagram
+                    </li>
+                    <li class="mob-menu-social__item">Twitter
+                    </li>
+                    <li class="mob-menu-social__item">Facebook
+                    </li>
+                    <li class="mob-menu-social__item">LinkedIn
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
+
+
+
+
+
+
+
     <!-- Главная часть сайта -->
-    <main>
+    <!-- <main>
         <section class="hero">
             <div class="container">
                 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
@@ -365,9 +378,9 @@
                 </ul>
             </div>
         </section>
-    </main>
+    </main> -->
     <!--Футер сайта -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container footer-container">
             <div class="locate">
                 <a lang="en" href="./index.html" class="logo">
@@ -432,7 +445,7 @@
         </div>
     </footer>
     <!-- Модальное окно -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button data-modal-close class="modal__button" type="button">
                 <svg class="modal__close" width="18px" height="18px">
@@ -482,9 +495,9 @@
                 <button class="submit" type="submit">Отправить</button>
             </form>
         </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 

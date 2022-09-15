@@ -1251,92 +1251,64 @@ header.container {
   margin-right: 93px;
 }
 
-.menu-button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-@media screen and (min-width: 768px) {
-  .menu-button {
-    display: none;
-  }
+.menu-open-button {
+  margin-left: auto;
 }
 
-.menu-button .icon-cross {
-  display: none;
-}
-
-.menu-button.is-open .icon-cross {
-  display: block;
-}
-
-.menu-button .icon-menu {
-  display: none;
-}
-
-.menu-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-left: 40px;
-  padding-top: 48px;
-  padding-bottom: 48px;
+.mob-menu {
   position: fixed;
   top: 0;
   left: 0;
-  pointer-events: none;
-  z-index: 1;
   width: 100vw;
   height: 100vh;
+  z-index: 1;
+  text-align: center;
   background-color: white;
-  opacity: 1;
-  transition: opacity 250ms ease;
-  overflow-y: scroll;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
-.menu-container.is-open {
+.mob-menu .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-close-button {
   display: block;
-}
-@media screen and (max-width: 767px) {
-  .menu-container {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    text-align: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .menu-container {
-    display: flex;
-  }
+  margin-left: auto;
+  margin-bottom: 5px;
 }
 
-.nav,
-.cont {
-  height: 796px;
-  width: 480px;
-}
-@media screen and (max-width: 480px) {
-  .nav,
-.cont {
-    display: flex;
-  }
+.mob-menu-list {
+  margin-bottom: 302px;
 }
 
-.nav {
-  outline: 1px, solid, #757575;
+.mob-menu-list:not(:last-child) {
+  margin-bottom: 32px;
 }
 
-.cont {
-  outline: 1px, solid, #757575;
+.mob-menu-contact-list__email {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
 }
-@media screen and (min-width: 768px) {
-  .cont {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+
+.mob-menu-contact-list__tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  margin-bottom: 64px;
+}
+
+.mob-menu-social {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
 }/*# sourceMappingURL=main.css.map */
