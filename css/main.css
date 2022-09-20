@@ -762,8 +762,17 @@ a {
 
 footer.container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  footer.container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+  }
 }
 
 .footer-container {
@@ -792,6 +801,21 @@ footer.container {
   padding-left: 124px;
   padding-right: 124px;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .locate {
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .adress {
+    display: block;
+    margin-bottom: 0;
+  }
 }
 
 .header {
@@ -1089,6 +1113,11 @@ header.container {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .subscription-box {
+    flex-wrap: wrap;
+  }
 }
 
 .subscription {

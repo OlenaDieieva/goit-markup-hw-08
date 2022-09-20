@@ -2,7 +2,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (min-width: 768px) {
+        flex-wrap: wrap;
+    }
 }
+
 
 .subscription {
     display: block;
@@ -22,8 +27,13 @@
     padding-bottom: 0px;
     margin-bottom: 20px;
     color: var(--white);
+
     // margin-left: auto;
     // margin-right: auto;
+    @media screen and (min-width: 768px) {
+        margin-top: 60px;
+    }
+}
 }
 
 // .subscription-label {
