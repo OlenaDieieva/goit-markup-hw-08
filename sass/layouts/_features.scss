@@ -13,6 +13,7 @@
 
 .features-list__list {
     display: flex;
+    flex-direction: column;
     gap: 30px;
 }
 
@@ -20,7 +21,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 270px;
     height: 120px;
     margin-bottom: 30px;
     background: var(--secondary-background-color);
@@ -33,9 +33,8 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    text-align: start;
+    text-align: center;
     text-transform: uppercase;
-    margin-top: 0px;
     margin-bottom: 10px;
     color: var(--primary-text-color);
 }
@@ -54,16 +53,13 @@
 }
 
 .features-list__item {
-    @media screen and (min-width: 480px) {
-        width: 100%;
-    }
+    width: 100%;
 
     @media screen and (min-width: 768px) {
         width: calc((100% - 30px) / 2);
     }
 
     @media screen and (min-width: 1200px) {
-        width: 100%;
-        ;
+        width: calc((100% - 90px)/4);
     }
 }
