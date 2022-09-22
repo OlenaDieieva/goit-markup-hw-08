@@ -13,7 +13,7 @@
 
 .features-list__list {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -26,6 +26,14 @@
     background: var(--secondary-background-color);
     border-radius: 4px;
     background-position: center;
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 90px)/4);
+    }
 }
 
 .features-list__title {
@@ -55,11 +63,4 @@
 .features-list__item {
     width: 100%;
 
-    @media screen and (min-width: 768px) {
-        width: calc((100% - 30px) / 2);
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: calc((100% - 90px)/4);
-    }
 }

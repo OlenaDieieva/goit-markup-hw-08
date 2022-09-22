@@ -975,6 +975,7 @@ header.container {
 
 .team__list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 30px;
 }
@@ -989,11 +990,16 @@ header.container {
 @media screen and (min-width: 480px) {
   .card {
     width: 100%;
+    margin-bottom: 22px;
   }
 }
 @media screen and (min-width: 768px) {
   .card {
     width: calc((100% - 30px) / 2);
+    padding-left: 15;
+    padding-right: 15;
+    padding-top: 123;
+    padding-bottom: 60;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1260,7 +1266,7 @@ header.container {
 
 .features-list__list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -1273,6 +1279,16 @@ header.container {
   background: var(--secondary-background-color);
   border-radius: 4px;
   background-position: center;
+}
+@media screen and (min-width: 768px) {
+  .features-list__icon {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features-list__icon {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .features-list__title {
@@ -1301,16 +1317,6 @@ header.container {
 
 .features-list__item {
   width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .features-list__item {
-    width: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .features-list__item {
-    width: calc((100% - 90px) / 4);
-  }
 }
 
 .join__title {
