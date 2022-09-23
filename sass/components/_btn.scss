@@ -8,6 +8,7 @@
     @media screen and (min-width: 480px) {
         margin-bottom: 40px;
     }
+
 }
 
 .btn-group__button.primary {
@@ -29,13 +30,23 @@
 .btn-group {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 8px;
-    margin-bottom: 34px;
+    margin-bottom: 40px;
 
     &:nth-last-child(3) {
         margin-right: 0px;
+    }
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        justify-content: center;
+        margin-bottom: 50px;
     }
 }
 

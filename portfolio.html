@@ -17,7 +17,7 @@
 
 <body>
     <!-- Шапка сайта -->
-    <header class="header">
+    <!-- <header class="header">
         <div class="container header-container">
             <nav class="navigation">
                 <a lang="en" href="./index.html" class="logo">
@@ -46,6 +46,63 @@
                     </a>
                 </li>
             </ul>
+        </div>
+    </header> -->
+    <!--Шапка сайта -->
+    <header class="header">
+        <div class="container header-container">
+            <!-- мобильное меню шапки -->
+            <div class="logo-box">
+                <a lang=" en" href="./index.html" class="logo">
+                    <span class="logo__accent">Web</span>Studio
+                </a>
+                <button type="button" class="menu-open-button js-open-menu" aria-expanded="false"
+                    aria-controls="mobile-menu">
+                    <svg width="24" height="16" aria-label="Переключатель мобильного меню">
+                        <use class="icon-menu" href="./images3/symbol-defs4.svg#icon-menu_24px"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="menu-container js-menu-container" id="mobile-menu">
+                <button type="button" class="menu-close-button js-close-menu" aria-expanded="false"
+                    aria-controls="mobile-menu">
+                    <svg width="19" height="19" aria-label="Переключатель мобильного меню">
+                        <use class="icon-cross" href="./images3/symbol-defs4.svg#icon-close_24px"></use>
+                    </svg>
+                </button>
+                <nav class="mob-menu-navigation">
+                    <ul class="mob-menu-list">
+                        <li><a href="./index.html" class="mob-menu__link current-mob">Студия</a></li>
+                        <li><a href="./portfolio.html" class="mob-menu__link">Портфолио</a></li>
+                        <li><a href="./portfolio.html" class="mob-menu__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-box">
+                    <ul class="mob-menu-contact-list">
+                        <li class="mob-menu-contact__item">
+                            <a href="tel:+380961111111" class="mob-menu-contact__tel">
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                        <li class="mob-menu-contact__item">
+                            <a lang="en" href="mailto:info@devstudio.com" class="mob-menu-contact__email">
+                                info@devstudio.com
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="mob-menu-social__list">
+                        <li class="mob-menu-social__item"><a class="mob-menu-social" href=" #">Instagram</a>
+                        </li>
+                        <li class="mob-menu-social__item"><a class="mob-menu-social" href="#">Twitter</a>
+                        </li>
+                        <li class="mob-menu-social__item"><a class="mob-menu-social" href="#">Facebook</a>
+                        </li>
+                        <li class="mob-menu-social__item"><a class="mob-menu-social" href="#">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         </div>
     </header>
     <main>

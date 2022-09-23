@@ -6,6 +6,7 @@
 }
 
 .team__list {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -13,8 +14,8 @@
 }
 
 .card {
-    width: auto;
-    margin-left: 0;
+    // width: auto;
+    // margin-left: 0;
     background-color: var(--white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
