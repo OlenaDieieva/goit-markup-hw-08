@@ -130,6 +130,13 @@
   gap: 50px;
   margin-left: auto;
 }
+@media screen and (min-width: 770px) and (max-width: 1200px) {
+  .contact-list {
+    display: block;
+    margin-top: 21px;
+    margin-bottom: 21px;
+  }
+}
 
 .contact-list__item {
   display: flex;
@@ -141,8 +148,6 @@
 .contact-list__email {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -150,6 +155,11 @@
   color: var(--title-text-color);
   fill: currentColor;
   transition: color 250ms var(--timing-function);
+}
+@media screen and (min-width: 770px) and (max-width: 1200px) {
+  .contact-list__email {
+    margin-bottom: 10px;
+  }
 }
 
 .contact-list__email:hover,
@@ -170,8 +180,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -597,6 +605,17 @@
   line-height: 1.17;
 }
 
+.logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-right: 88px;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
+}
+
 .logo__accent {
   color: var(--accent-color);
 }
@@ -882,12 +901,29 @@ header.container {
   align-items: center;
 }
 
-.main nav-container {
-  display: none;
+@media screen and (max-width: 769px) {
+  .main-navigation {
+    display: none;
+  }
+}
+@media screen and (min-width: 770px) {
+  .main-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .navigation {
+  display: flex;
   align-items: center;
+}
+@media screen and (min-width: 770px) {
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .navigation-list__link {
@@ -903,6 +939,7 @@ header.container {
 }
 
 .navigation-list {
+  display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 50px;
@@ -1098,11 +1135,9 @@ header.container {
 }
 
 .clients__list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: -15px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .clients__list {
     width: calc((100% - 30px) / 2);
     padding: 15px 60px;
@@ -1124,6 +1159,10 @@ header.container {
     gap: 30px;
     flex-wrap: nowrap;
   }
+}
+
+.clients__item {
+  margin: 15px;
 }
 
 .clients__link {
@@ -1455,6 +1494,11 @@ header.container {
   display: flex;
   text-align: center;
   justify-content: space;
+}
+@media screen and (min-width: 770px) {
+  .logo-box {
+    display: none;
+  }
 }
 
 .menu-open-button {

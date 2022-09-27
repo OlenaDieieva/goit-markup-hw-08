@@ -24,11 +24,13 @@
 }
 
 .clients__list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    @media screen and (max-width: 767px) {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    margin: -15px;
+
+    @media screen and (min-width: 480px) {
         width: calc((100% - 30px) / 2);
         padding: 15px 60px;
         display: flex;
@@ -47,6 +49,10 @@
         gap: 30px;
         flex-wrap: nowrap;
     }
+}
+
+.clients__item {
+    margin: 15px;
 }
 
 .clients__link {

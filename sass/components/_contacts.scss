@@ -3,6 +3,12 @@
     align-items: center;
     gap: 50px;
     margin-left: auto;
+
+    @media screen and (min-width: 770px) and (max-width: 1200px) {
+        display: block;
+        margin-top: 21px;
+        margin-bottom: 21px;
+    }
 }
 
 .contact-list__item {
@@ -15,8 +21,8 @@
 .contact-list__email {
     display: flex;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -24,6 +30,10 @@
     color: var(--title-text-color);
     fill: currentColor;
     transition: color 250ms var(--timing-function);
+
+    @media screen and (min-width: 770px) and (max-width: 1200px) {
+        margin-bottom: 10px;
+    }
 }
 
 .contact-list__email:hover,
@@ -44,8 +54,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
