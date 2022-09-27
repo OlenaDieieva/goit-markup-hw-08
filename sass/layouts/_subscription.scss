@@ -3,18 +3,25 @@
     align-items: center;
     justify-content: center;
 
-    @media screen and (min-width: 768px) {
-        flex-wrap: wrap;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 }
-
 
 .subscription {
     display: block;
     justify-content: center;
     gap: 12px;
-    padding-left: 15px;
-    padding-right: 15px;
+    // padding-left: 15px;
+    // padding-right: 15px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 72px;
+        padding-bottom: 94px;
+    }
 }
 
 .subscription__title {

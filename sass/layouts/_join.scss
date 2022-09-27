@@ -1,21 +1,23 @@
 .join {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    margin-bottom: 60px;
     margin-right: 93px;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 480px) {
         display: inline-block;
         margin-right: auto;
         margin-left: auto;
+        margin-bottom: 60px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 768px) {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-items: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 72px;
+        padding-bottom: 100px;
     }
 }
 
@@ -32,9 +34,9 @@
         display: flex;
         align-items: center;
         justify-items: center;
-        margin-bottom: 60px;
-        margin-left: 76px;
-        margin-right: 89px;
+        //     margin-bottom: 60px;
+        //     margin-left: 76px;
+        //     margin-right: 89px;
     }
 }
 
@@ -49,13 +51,14 @@
     padding-bottom: 0px;
     margin-bottom: 20px;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
         text-align: center;
     }
-
 }
 
 .join__list {
+    display: flex;
+    align-items: center;
     justify-content: space-around;
     gap: 10px;
 
