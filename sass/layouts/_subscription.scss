@@ -1,7 +1,7 @@
 .subscription-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
 
     @media screen and (min-width: 1200px) {
         display: flex;
@@ -17,6 +17,8 @@
     gap: 12px;
     // padding-left: 15px;
     // padding-right: 15px;
+
+    @media screen and (min-width: 770px) {}
 
     @media screen and (min-width: 1200px) {
         padding-top: 72px;
@@ -45,6 +47,13 @@
     align-items: center;
     justify-content: center;
     gap: 12px;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .subscription__button {
@@ -60,6 +69,10 @@
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 0px;
+    }
 }
 
 .subscription__icon {
@@ -80,4 +93,9 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     padding-left: 16px;
+
+    @media screen and (min-width: 480px) {
+        // margin-left: 15px;
+        // margin-right: 15px;
+    }
 }

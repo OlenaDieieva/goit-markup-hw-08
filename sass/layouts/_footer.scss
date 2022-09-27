@@ -45,20 +45,19 @@ footer.container {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        margin-right: auto;
-        margin-left: auto;
+        // margin-right: auto;
+        // margin-left: auto;
     }
 }
 
 .locate {
-    margin-right: 70px;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 480px) {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        // margin-bottom: 60px;
+        margin-bottom: 60px;
     }
 
     @media screen and (min-width: 768px) {
@@ -66,14 +65,13 @@ footer.container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-left: auto;
-        margin-right: auto;
-
+        // margin-left: auto;
+        margin-right: 70px;
     }
 
     @media screen and (min-width: 1200px) {
-        margin-right: 70px;
-        padding-top: 60px;
+        // margin-right: 70px;
+        // padding-top: 60px;
         padding-bottom: 60px;
     }
 }

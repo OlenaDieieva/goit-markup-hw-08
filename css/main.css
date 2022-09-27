@@ -608,7 +608,17 @@
 .logo {
   padding-top: 16px;
   padding-bottom: 16px;
-  margin-right: 88px;
+}
+@media screen and (min-width: 480px) {
+  .logo {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (min-width: 770px) {
+  .logo {
+    margin-right: 88px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .logo {
@@ -846,20 +856,16 @@ footer.container {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
-.locate {
-  margin-right: 70px;
-}
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .locate {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -868,14 +874,11 @@ footer.container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin-right: 70px;
   }
 }
 @media screen and (min-width: 1200px) {
   .locate {
-    margin-right: 70px;
-    padding-top: 60px;
     padding-bottom: 60px;
   }
 }
@@ -1231,11 +1234,6 @@ header.container {
   color: var(--white);
 }
 
-.subscription-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 @media screen and (min-width: 1200px) {
   .subscription-box {
     display: flex;
@@ -1280,6 +1278,14 @@ header.container {
   justify-content: center;
   gap: 12px;
 }
+@media screen and (min-width: 1200px) {
+  .subscription__btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 .subscription__button {
   display: flex;
@@ -1294,6 +1300,11 @@ header.container {
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .subscription__button {
+    margin-top: 0px;
+  }
 }
 
 .subscription__icon {
@@ -1343,7 +1354,6 @@ header.container {
   color: rgba(255, 255, 255, 0.6);
   padding-left: 16px;
 }
-
 .features {
   padding-top: 94px;
   padding-bottom: 94px;
