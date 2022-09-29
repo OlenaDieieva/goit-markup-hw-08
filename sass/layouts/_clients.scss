@@ -1,6 +1,5 @@
 .clients__section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 60px 0px;
 
     @media screen and (min-width: 1200px) {
         padding-top: 94px;
@@ -24,28 +23,25 @@
 }
 
 .clients__list {
-
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     margin: -15px;
 
     @media screen and (min-width: 480px) {
         width: calc((100% - 30px) / 2);
         padding: 15px 60px;
-        display: flex;
         flex-wrap: wrap;
     }
 
     @media screen and (min-width: 768px) {
         width: calc((100% - 60px) / 3);
-        display: flex;
         flex-wrap: wrap;
         padding: 15px 60px;
     }
 
     @media screen and (min-width: 1200px) {
-        display: flex;
         gap: 30px;
         flex-wrap: nowrap;
     }
