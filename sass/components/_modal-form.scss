@@ -10,23 +10,22 @@
 
 .modal {
     position: absolute;
-    top: 50%;
+    top: 20px;
     left: 50%;
-    width: 528px;
+    // width: 528px;
+    width: 100%;
     min-height: 581px;
     padding: 40px;
     background-color: var(--white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translateX(-50%) scale(1);
     transition: transform 250ms var(--timing-function), opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
 
     @media screen and (min-width: 480px) {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        // top: 50%;
+        // transform: translate(-50%, -50%) scale(1);
         max-width: 450px;
         width: 100%;
     }
@@ -79,12 +78,17 @@
 }
 
 .checkbox__label {
-    font-size: 14px;
+    // font-size: 14px;
+    font-size: 7px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
     display: flex;
     align-items: center;
+
+    @include mobile {
+        font-size: 12px;
+    }
 }
 
 .checkbox__label::before {
@@ -118,6 +122,11 @@
 
 .checkbox__accent:hover .checkbox__accent:focus {
     color: var(--accent-color);
+}
+
+.checkbox {
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .submit {

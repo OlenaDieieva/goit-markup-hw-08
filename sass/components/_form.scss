@@ -35,7 +35,10 @@
 
 .data__input-wrap {
     position: relative;
+    margin-top: 4px;
 }
+
+.comment {}
 
 .comment__form {
     font-weight: 400;
@@ -49,6 +52,7 @@
     resize: none;
     padding-top: 12px;
     padding-left: 16px;
+    margin-top: 4px;
 }
 
 .comment__form:focus {
