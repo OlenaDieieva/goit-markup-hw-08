@@ -1,6 +1,6 @@
 .hero {
     width: 100%;
-    height: 600px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
     background-color: #C4C4C4;
@@ -9,8 +9,8 @@
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
 
     @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
     screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -30,19 +30,23 @@
     screen and (min-resolution: 192dpi) and (min-width: 1200px),
     screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../img/desktop/desktop-sqoosh2x/header-desktop@2x.jpg);
+            url(../img/desktop/desktop-sqoosh2x/header-desctop@2x.jpg);
     }
 
     @media screen and (min-width: 480px) {
-        width: 450px;
+        max-width: 480px;
     }
 
     @media screen and (min-width: 768px) {
-        width: 738px;
+        max-width: 768px;
     }
 
-    @media screen and (min-width: 1170px) {
-        width: 1170px;
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        width: 100%;
+        height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
     }
 }
 
@@ -61,7 +65,16 @@
     @include mobile {
         width: 360px;
     }
+
+    @include desktop {
+        font-size: 44px;
+        line-height: 1.364;
+        width: 700px;
+
+    }
 }
+
+
 
 .hero__button-primary {
     font-family: inherit;

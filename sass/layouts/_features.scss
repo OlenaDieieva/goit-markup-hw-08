@@ -1,8 +1,15 @@
 .features {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     margin-bottom: 0px;
     background-color: var(--white);
+
+    @include tablet {}
+
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .features .container {
@@ -17,6 +24,13 @@
     gap: 30px;
 }
 
+.features-list__item {
+
+    @include tablet {
+        width: 354px;
+    }
+}
+
 .features-list__icon {
     display: flex;
     align-items: center;
@@ -28,7 +42,7 @@
     background-position: center;
 
     @media screen and (min-width: 768px) {
-        width: calc((100% - 30px) / 2);
+        width: 100%;
     }
 
     @media screen and (min-width: 1200px) {
@@ -45,6 +59,10 @@
     text-transform: uppercase;
     margin-bottom: 10px;
     color: var(--primary-text-color);
+
+    @include tablet {
+        text-align: start;
+    }
 }
 
 .features-list__text {
