@@ -1,5 +1,5 @@
 .clients__section {
-    padding-top: 60px 0px;
+    padding: 60px 0px;
 
     @media screen and (min-width: 1200px) {
         padding-top: 94px;
@@ -27,7 +27,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin: -15px;
+    gap: 30px;
 
     @media screen and (min-width: 480px) {
         width: calc((100% - 30px) / 2);
@@ -48,7 +48,7 @@
 }
 
 .clients__item {
-    margin: 15px;
+    // margin: 15px;
 }
 
 .clients__link {
