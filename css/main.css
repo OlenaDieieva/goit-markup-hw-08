@@ -128,7 +128,7 @@
   gap: 50px;
   margin-left: auto;
 }
-@media screen and (min-width: 770px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .contact-list {
     display: block;
     margin-top: 21px;
@@ -154,7 +154,7 @@
   fill: currentColor;
   transition: color 250ms var(--timing-function);
 }
-@media screen and (min-width: 770px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .contact-list__email {
     margin-bottom: 10px;
   }
@@ -608,7 +608,7 @@
   padding-top: 16px;
   padding-bottom: 16px;
 }
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 768px) {
   .logo {
     margin-right: 88px;
   }
@@ -1548,7 +1548,7 @@ header.container {
   align-items: center;
   justify-content: space;
 }
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 768px) {
   .logo-box {
     display: none;
   }
