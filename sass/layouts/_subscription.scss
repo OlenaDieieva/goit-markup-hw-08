@@ -1,7 +1,4 @@
 .subscription-box {
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
 
     @media screen and (min-width: 1200px) {
         display: flex;
@@ -15,8 +12,6 @@
     display: block;
     justify-content: center;
     gap: 12px;
-    // padding-left: 15px;
-    // padding-right: 15px;
 
     @media screen and (min-width: 1200px) {
         padding-top: 72px;
