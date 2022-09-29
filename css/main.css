@@ -638,9 +638,11 @@
   color: var(--white);
   display: inline-block;
   margin-bottom: 20px;
+  margin-right: 0px;
   font-family: "Raleway", sans-serif;
   text-decoration: none;
   background: var(--primary-background-color);
+  padding: 0px;
 }
 
 body {
@@ -815,7 +817,6 @@ a {
 }
 
 .footer-container {
-  padding: 60px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -889,12 +890,12 @@ header.container {
   align-items: center;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 767px) {
   .main-navigation {
     display: none;
   }
 }
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 768px) {
   .main-navigation {
     display: flex;
     align-items: center;
@@ -1295,6 +1296,10 @@ header.container {
 }
 
 .subscription__button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1499,8 +1504,9 @@ header.container {
 }
 @media screen and (min-width: 768px) {
   .locate-join {
+    width: 100%;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-around;
   }
 }
