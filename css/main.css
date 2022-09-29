@@ -608,12 +608,6 @@
   padding-top: 16px;
   padding-bottom: 16px;
 }
-@media screen and (min-width: 480px) {
-  .logo {
-    padding-top: 60px;
-    padding-bottom: 20px;
-  }
-}
 @media screen and (min-width: 770px) {
   .logo {
     margin-right: 88px;
@@ -1551,7 +1545,7 @@ header.container {
 
 .logo-box {
   display: flex;
-  text-align: center;
+  align-items: center;
   justify-content: space;
 }
 @media screen and (min-width: 770px) {
