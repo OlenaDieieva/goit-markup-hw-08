@@ -64,6 +64,10 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+
+    @include mobile {
+        margin-bottom: 306px;
+    }
 }
 
 .mob-menu__link {

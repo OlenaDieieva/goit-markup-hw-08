@@ -1620,6 +1620,11 @@ header.container {
   flex-direction: column;
   gap: 32px;
 }
+@media screen and (min-width: 480px) {
+  .mob-menu-list {
+    margin-bottom: 306px;
+  }
+}
 
 .mob-menu__link {
   font-weight: 500;
