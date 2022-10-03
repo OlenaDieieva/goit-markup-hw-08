@@ -1,14 +1,31 @@
 .galery {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .galery-container {
-    // width: 1200px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
-    margin-left: auto;
+    margin-right: auto;
+
+    @include mobile {
+        width: 450px;
+    }
+
+    @include tablet {
+        width: 738px;
+    }
+
+    @include desktop {
+        width: 1200px;
+    }
 }
 
 .galery-title-hidden {
@@ -35,47 +52,23 @@
 
 .galery-list {
     display: flex;
-    flex-direction: column;
-    // justify-content: flex-start;
-    justify-content: space;
-    // height: 100%;
     flex-wrap: wrap;
     gap: 30px;
-
-    @media screen and (min-width: 480px) {
-        // padding: 15px 60px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    @media screen and (min-width: 768px) {
-        // padding: 15px 60px;
-        // flex-wrap: wrap;
-        width: calc((100% - 30px) / 2);
-
-    }
-
-    @media screen and (min-width: 1200px) {
-        gap: 30px;
-        flex-wrap: nowrap;
-    }
 }
 
 .galery-list__item {
     width: 100%;
     border-radius: 4px;
 
-    // @media screen and (min-width: 480px) {
-    //     width: 100%;
-    // }
+    @include mobile {}
 
-    // @media screen and (min-width: 770px) {
-    //     width: calc((100% - 30px) / 2);
-    // }
+    @include tablet {
+        width: calc((100% - 30px) / 2);
+    }
 
-    // @media screen and (min-width: 1200px) {
-    //     width: calc((100% - 60px) / 3);
-    // }
+    @include desktop {
+        width: calc((100% - 60px) / 3);
+    }
 }
 
 .galery-list__item:nth-child(3) {

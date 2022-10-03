@@ -4,8 +4,6 @@
     margin-bottom: 0px;
     background-color: var(--white);
 
-    @include tablet {}
-
     @include desktop {
         padding-top: 94px;
         padding-bottom: 94px;
