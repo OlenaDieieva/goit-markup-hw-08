@@ -730,6 +730,11 @@ a {
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
 }
+@media screen and (min-width: 768px) {
+  .product__title {
+    font-size: 16px;
+  }
+}
 
 .product__name {
   flex-grow: 1;

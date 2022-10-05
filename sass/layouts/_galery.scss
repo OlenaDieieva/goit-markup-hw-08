@@ -39,6 +39,10 @@
     line-height: 2.0;
     letter-spacing: 0.06em;
     color: var(--primary-text-color);
+
+    @include tablet {
+        font-size: 16px;
+    }
 }
 
 .product__name {
