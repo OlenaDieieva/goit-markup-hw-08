@@ -70,8 +70,8 @@
                 </button>
                 <nav class="mob-menu-navigation">
                     <ul class="mob-menu-list">
-                        <li><a href="./index.html" class="mob-menu__link current-mob">Студия</a></li>
-                        <li><a href="./portfolio.html" class="mob-menu__link">Портфолио</a></li>
+                        <li><a href="./index.html" class="mob-menu__link">Студия</a></li>
+                        <li><a href="./portfolio.html" class="mob-menu__link current-mob">Портфолио</a></li>
                         <li><a href="./portfolio.html" class="mob-menu__link">Контакты</a></li>
                     </ul>
                 </nav>
@@ -155,11 +155,11 @@
                             <div class="product">
                                 <picture>
                                     <source
-                                        srcset="./img/desktop/desktop/desktop-squoosh1x/portfolio2-desktop@1x.jpg 1x, ./img/desktop/desktop-squoosh2x/portfolio2-desktop@2x.jpg 2x"
-                                        media="(min-width: 1200px)">
+                                        srcset="./img/desktop/desktop-squoosh1x/portfolio2-desktop@1x.jpg 1x, ./img/desktop/desktop-squoosh2x/portfolio2-desktop@2x.jpg 2x"
+                                        media=" (min-width: 1200px)">
                                     <source
                                         srcset="./img/tablet/tablet-squoosh1x/portfolio2-tablet@1x.jpg 1x, ./img/tablet/tablet-squoosh2x/portfolio2-tablet@2x.jpg 2x"
-                                        media="(min-width: 768px)">
+                                        media=" (min-width: 768px)">
                                     <source
                                         srcset="./img/mobile/mobile-squoosh1x/portfolio2-mobile@1x.jpg 1x, ./img/mobile/mobile-squoosh2x/portfolio2-mobile@2x.jpg 2x"
                                         media="(max-width: 767px)">
@@ -420,8 +420,8 @@
                         </ul>
                     </address>
                 </div>
-                <div class="join section">
-                    <h3 class="join__title">присоединяйтесь</h3>
+                <div class="join">
+                    <p class="join__title">присоединяйтесь</p>
                     <ul class="join__list">
                         <li class="media">
                             <a href="" class="media__link">
@@ -454,18 +454,20 @@
                     </ul>
                 </div>
             </div>
-            <form class="subscription">
-                <p class="subscription__title">Подпишитесь на рассылку</p>
-                <label class="subscription-label" for="email"></label>
-                <div class="subscription__btn">
-                    <input class="subscription__input" type="email" name="email" id="email" placeholder="E-mail" />
-                    <button class="subscription__button" type="submit">Подписаться
-                        <svg class="subscription__icon" width="24" height="24">
-                            <use href="./images3/symbol-defs2.svg#icon-icon-send"></use>
-                        </svg>
-                    </button>
-                </div>
-            </form>
+            <div class="subscription-box">
+                <form class="subscription">
+                    <p class="subscription__title">Подпишитесь на рассылку</p>
+                    <label class="subscription-label" for="email"></label>
+                    <div class="subscription__btn">
+                        <input class="subscription__input" type="email" name="email" id="email" placeholder="E-mail" />
+                        <button class="subscription__button" type="submit">Подписаться
+                            <svg class="subscription__icon" width="24" height="24">
+                                <use href="./images3/symbol-defs2.svg#icon-icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
     </footer>
     <script src="./js/modal.js"></script>

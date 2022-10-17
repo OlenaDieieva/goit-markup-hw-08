@@ -846,8 +846,8 @@ a {
   .footer-container {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    align-items: baseline;
+    justify-content: space-between;
   }
 }
 
@@ -867,9 +867,9 @@ a {
 @media screen and (min-width: 1200px) {
   .locate-join {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    align-items: baseline;
     gap: 70px;
+    margin: 0;
   }
 }
 
@@ -900,6 +900,7 @@ a {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    margin-bottom: 0;
   }
 }
 
@@ -918,7 +919,7 @@ a {
 @media screen and (min-width: 1200px) {
   .adress {
     align-items: center;
-    margin-right: 70px;
+    margin-right: 0;
   }
 }
 
@@ -1315,6 +1316,7 @@ header.container {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    width: auto;
   }
 }
 
@@ -1559,7 +1561,8 @@ header.container {
 }
 @media screen and (min-width: 1200px) {
   .join {
-    margin-right: 93px;
+    display: block;
+    margin: 0;
   }
 }
 
